@@ -1,0 +1,11 @@
+Métodos HTTP: GET, POST , PUT, DELETE, HEAD, OPTIONS, ...
+
+Corpo da requisição (Request Body)
+Parâmetros de busca (Search Params / Query Params) `http:ocalhost:3333/users?name=Pedro
+Parâmetro de rota (Route Params) -> Identificação de recursos `DELETE http:localhost:3333/users/5
+Cabeçalhos (Headers) -> Contexto
+
+Semântica = Significado
+
+Driver nativo / Query Builders / ORMs (Object Relational Mapping) `Hibernate / Doctrine / ActiveRecord
+
