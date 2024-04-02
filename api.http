@@ -16,3 +16,9 @@ Content-Type: application/json
   "name": "Pedro",
   "email": "pedro@teste.com.br"
 }
+
+### 
+
+GET http://localhost:3333/events/1062b011-c87e-4539-b0c5-59fe765bc77f
+Content-Type: application/json
+
