@@ -9,3 +9,9 @@ Semântica = Significado
 
 Driver nativo / Query Builders / ORMs (Object Relational Mapping) `Hibernate / Doctrine / ActiveRecord
 
+Erros:
+
+20x => Sucesso
+30x => Redirecionamento
+40x => Erro do cliente (em alguma informação por quem está fazendo a chamada à API);
+50x => Erro do servidor (um erro que está acontecendo independetemente ao que está sendo enviado ao servidor)
