@@ -2,6 +2,7 @@ import type { FastifyInstance } from "fastify";
 import { ZodTypeProvider } from "fastify-type-provider-zod";
 import { z } from "zod";
 import { prisma } from "../lib/prisma";
+import { BadRequest } from "./_errors/bad-request";
 
 export async function registerForEvent(app: FastifyInstance) {
     app.withTypeProvider<ZodTypeProvider>().post(
@@ -60,7 +61,7 @@ export async function registerForEvent(app: FastifyInstance) {
                 event?.maximumAttendees &&
                 amountOfAttendeeForEvent >= event.maximumAttendees
             ) {
-                throw new Error(
+                throw new BadRequest(
                     "The maximum number of attendees for this event has already been reached.",
                 );
             }
