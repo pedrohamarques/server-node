@@ -11,6 +11,9 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "prisma": {
+        "seed": "tsx prisma/seed.ts"
+    },
     "devDependencies": {
         "@types/node": "^20.12.2",
         "@typescript-eslint/eslint-plugin": "^7.5.0",
